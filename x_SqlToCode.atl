@@ -1,0 +1,25 @@
+library x_SqlToCode;
+
+helper context SQL!Table def : toString() : String =
+'DROP TABLE IF EXISTS ' + 'SQL!Table.name' + ';\n'
++
+'CREATE TABLE ' + self.name + ' (\n'
++
+'INSERT INTO ' + self.name +
+'\nVALUES (null, <value1>,
+<value2>, ...);\n\n'
++
+'DELETE FROM ' + self.name +
+'\nWHERE <condiction>;\n\n'
++
+'SELECT * FROM ' + self.name +
+'\nWHERE <condiction>;\n\n'
++
+'UPDATE ' + self.name +
+'\nSET  <column> = <value>' +
+'\nWHERE <condiction>;';
+
+helper context SQL!Column def : toString() : String =
+	'UPDATE ' + SQL!Column.name +
+	'\nSET ' + self.name + '= <value>' +
+	'\nWHERE <condiction>;';
