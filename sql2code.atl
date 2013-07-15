@@ -1,3 +1,4 @@
-query SQL2Code_query = SQL!Table.allInstances()->collect(x | x.toString().writeTo('C:/Temp/Exemplo/' + x.name.replaceAll('.', '/') + '/' + x.name + '.sql'));
+query SQL2Code = SQL!Element.allInstances()->
+	collect(x | x.toString().writeTo('C:/Temp/Exemplo/' + x.name.replaceAll('.', '/') + '/' + x.name + '.sql'));
 
 uses x_SqlToCode;

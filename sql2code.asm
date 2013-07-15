@@ -1,12 +1,12 @@
 <?xml version = '1.0' encoding = 'ISO-8859-1' ?>
 <asm version="1.0" name="0">
 	<cp>
-		<constant value="SQL2Code_query"/>
+		<constant value="SQL2Code"/>
 		<constant value="main"/>
 		<constant value="A"/>
 		<constant value="Sequence"/>
 		<constant value="#native"/>
-		<constant value="Table"/>
+		<constant value="Element"/>
 		<constant value="SQL"/>
 		<constant value="J.allInstances():J"/>
 		<constant value="1"/>
@@ -20,26 +20,26 @@
 		<constant value=".sql"/>
 		<constant value="J.writeTo(J):J"/>
 		<constant value="CJ.including(J):CJ"/>
-		<constant value="1:24-1:33"/>
-		<constant value="1:24-1:48"/>
-		<constant value="1:62-1:63"/>
-		<constant value="1:62-1:74"/>
-		<constant value="1:83-1:101"/>
-		<constant value="1:104-1:105"/>
-		<constant value="1:104-1:110"/>
-		<constant value="1:122-1:125"/>
-		<constant value="1:127-1:130"/>
-		<constant value="1:104-1:131"/>
-		<constant value="1:83-1:131"/>
-		<constant value="1:134-1:137"/>
-		<constant value="1:83-1:137"/>
-		<constant value="1:140-1:141"/>
-		<constant value="1:140-1:146"/>
-		<constant value="1:83-1:146"/>
-		<constant value="1:149-1:155"/>
-		<constant value="1:83-1:155"/>
-		<constant value="1:62-1:156"/>
-		<constant value="1:24-1:157"/>
+		<constant value="1:18-1:29"/>
+		<constant value="1:18-1:44"/>
+		<constant value="2:14-2:15"/>
+		<constant value="2:14-2:26"/>
+		<constant value="2:35-2:53"/>
+		<constant value="2:56-2:57"/>
+		<constant value="2:56-2:62"/>
+		<constant value="2:74-2:77"/>
+		<constant value="2:79-2:82"/>
+		<constant value="2:56-2:83"/>
+		<constant value="2:35-2:83"/>
+		<constant value="2:86-2:89"/>
+		<constant value="2:35-2:89"/>
+		<constant value="2:92-2:93"/>
+		<constant value="2:92-2:98"/>
+		<constant value="2:35-2:98"/>
+		<constant value="2:101-2:107"/>
+		<constant value="2:35-2:107"/>
+		<constant value="2:14-2:108"/>
+		<constant value="1:18-2:109"/>
 		<constant value="x"/>
 		<constant value="self"/>
 	</cp>
