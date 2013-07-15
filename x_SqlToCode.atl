@@ -5,9 +5,8 @@ helper context SQL!Table def : toString() : String =
 +
 'CREATE TABLE ' + self.name + ';\n\n'
 +
-'INSERT INTO ' + self.name +
-'\nVALUES (null, <value1>,
-<value2>, ...);\n\n'
+'INSERT INTO ' + self.name + ' (' + self.column -> iterate(i; acc : String = '' | acc + i.toString() + ', ') + ')\n' +
+'VALUES (<value1>, <value2>, ...);\n\n'
 +
 'DELETE FROM ' + self.name +
 '\nWHERE <condiction>;\n\n'
@@ -16,8 +15,8 @@ helper context SQL!Table def : toString() : String =
 '\nWHERE <condiction>;\n\n'
 +
 'UPDATE ' + self.name +
-'\nSET ' + self.column -> iterate(i; acc : String = '' | acc + i.toString()) + ' = <value>' +
-'\nWHERE <condiction>;';
+'\nSET ' + self.column -> iterate(i; acc : String = '' | acc + i.toString() + ' = <value>, ') + ')\n' +
+'WHERE <condiction>;';
 
 helper context SQL!Column def : toString() : String =
-'\t' + self.name + ';\n'; 
+self.name;
