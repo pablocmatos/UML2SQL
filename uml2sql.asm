@@ -63,7 +63,7 @@
 		<constant value="SQL"/>
 		<constant value="NTransientLink;.addTargetElement(SJ):V"/>
 		<constant value="NTransientLinkSet;.addLink2(NTransientLink;B):V"/>
-		<constant value="6:5-8:4"/>
+		<constant value="6:5-7:19"/>
 		<constant value="__applyClasse2Sql"/>
 		<constant value="NTransientLink;"/>
 		<constant value="NTransientLink;.getSourceElement(S):J"/>
@@ -77,20 +77,20 @@
 		<constant value="Property"/>
 		<constant value="attr"/>
 		<constant value="Column"/>
-		<constant value="13:5-17:4"/>
+		<constant value="12:5-15:23"/>
 		<constant value="__applyAtributo2Coluna"/>
 		<constant value="type"/>
 		<constant value="owner"/>
+		<constant value="13:11-13:15"/>
+		<constant value="13:11-13:20"/>
+		<constant value="13:3-13:20"/>
 		<constant value="14:11-14:15"/>
 		<constant value="14:11-14:20"/>
-		<constant value="14:3-14:20"/>
-		<constant value="15:11-15:15"/>
-		<constant value="15:11-15:20"/>
-		<constant value="15:11-15:25"/>
-		<constant value="15:3-15:25"/>
-		<constant value="16:12-16:16"/>
-		<constant value="16:12-16:22"/>
-		<constant value="16:3-16:22"/>
+		<constant value="14:11-14:25"/>
+		<constant value="14:3-14:25"/>
+		<constant value="15:12-15:16"/>
+		<constant value="15:12-15:22"/>
+		<constant value="15:3-15:22"/>
 	</cp>
 	<field name="1" type="2"/>
 	<field name="3" type="4"/>

@@ -6,7 +6,7 @@
 		<constant value="A"/>
 		<constant value="Sequence"/>
 		<constant value="#native"/>
-		<constant value="Element"/>
+		<constant value="Table"/>
 		<constant value="SQL"/>
 		<constant value="J.allInstances():J"/>
 		<constant value="1"/>
@@ -20,8 +20,8 @@
 		<constant value=".sql"/>
 		<constant value="J.writeTo(J):J"/>
 		<constant value="CJ.including(J):CJ"/>
-		<constant value="1:18-1:29"/>
-		<constant value="1:18-1:44"/>
+		<constant value="1:18-1:27"/>
+		<constant value="1:18-1:42"/>
 		<constant value="2:14-2:15"/>
 		<constant value="2:14-2:26"/>
 		<constant value="2:35-2:53"/>

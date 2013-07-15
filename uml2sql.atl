@@ -4,8 +4,7 @@ create OUT : SQL from IN : UML;
 rule Classe2Sql{
 	from cl : UML!Class
 	to tab : SQL!Table(
-		name <- cl.name
-		)
+		name <- cl.name)
 }
 
 rule Atributo2Coluna{
@@ -13,6 +12,5 @@ rule Atributo2Coluna{
 	to col : SQL!Column(
 		name <- attr.name,
 		type <- attr.type.name,
-		owner <- attr.owner
-		)
+		owner <- attr.owner)
 }

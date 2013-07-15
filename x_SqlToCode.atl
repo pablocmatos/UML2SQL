@@ -1,9 +1,9 @@
 library x_SqlToCode;
 
 helper context SQL!Table def : toString() : String =
-'DROP TABLE IF EXISTS ' + self.name + ';\n'
+'DROP TABLE IF EXISTS ' + self.name + ';\n\n'
 +
-'CREATE TABLE ' + self.name + ' (\n'
+'CREATE TABLE ' + self.name + ';\n\n'
 +
 'INSERT INTO ' + self.name +
 '\nVALUES (null, <value1>,
@@ -16,5 +16,8 @@ helper context SQL!Table def : toString() : String =
 '\nWHERE <condiction>;\n\n'
 +
 'UPDATE ' + self.name +
-'\nSET ' + self.col->select(c | c.oclIsTypeOf(SQL!Column))->iterate(i; col:String = '' | col + '\t' + i.name + ' ' + i.type) + ' = <value>' +
+'\nSET ' + self.column -> iterate(i; acc : String = '' | acc + i.toString()) + ' = <value>' +
 '\nWHERE <condiction>;';
+
+helper context SQL!Column def : toString() : String =
+'\t' + self.name + ';\n'; 
