@@ -3,7 +3,7 @@ library x_SqlToCode;
 helper context SQL!Table def : toString() : String =
 'DROP TABLE IF EXISTS ' + self.name + ';\n\n'
 +
-'CREATE TABLE ' + self.name + ';\n\n'
+'CREATE TABLE ' + self.name + ' (' + self.column -> iterate(i; acc : String = '' | acc + i.name + ' ' + i.type + ', ') + ');\n\n'
 +
 'INSERT INTO ' + self.name + ' (' + self.column -> iterate(i; acc : String = '' | acc + i.toString() + ', ') + ')\n' +
 'VALUES (<value1>, <value2>, ...);\n\n'
